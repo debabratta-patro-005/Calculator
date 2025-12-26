@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalcculatorApp</title>
+    <link href="/style.css">
+</head>
+<body>
+    <Center>
+        <h1> Welcome to Dev's Calculator App!... </h1>
+        <br/>
+        <h2>
+            <p>
+                <strong>Result:  <span th:text="${result}"></span> </strong>
+            </p>
+        </h2>
+        <form action="http://localhost:8080/api/calculate" method="post">
+            <br/>
+            <br/>
+            <label>Num1</label>
+            <input type="text" name="num1"/>
+            <br/>
+            <br/>
+            <label>Num2</label>
+            <input type="text" name="num2"/>
+            <br/>
+            <br/>
+            <input type="submit" value="add" name="operation"/>
+            &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+            <input type="submit" value="subtract" name="operation"/>
+            <br/>
+            <br/>
+            <input type="submit" value="multiply" name="operation"/>
+            &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+            <input type="submit" value="divide" name="operation"/>
+        </form>
+    </Center>
+</body>
+</html>
